@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>To-Do List</title>
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 
      <h1>To-Do List</h1>
+
      <h3>Create new task</h3>
 
 <form id="create-task-form">
@@ -15,8 +19,56 @@
 
     <label for="deadline-field">Deadline:</label>
     <input type="date" id="deadline-field">
+
+    <input type="submit" value="Save">
 </form>
 
+<table id="tasks-table">
+    <thead>
+    <tr>
+        <th>Description</th>
+        <th>Deadline</th>
+        <th>Done</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Learn HTML</td>
+        <td>02.06.2020</td>
+        <td>
+            <input type="checkbox" class="mark-done" data-id=1>
+        </td>
+        <td>
+            <a href="#" class="remove-task">
+            <i class='fa fa-trash'></i>
+        </td>
+    </tr>
+    <tr>
+        <td>Learn Javascript</td>
+        <td>12.06.2020</td>
+        <td>
+            <input type="checkbox" class="mark-done" data-id=2>
+        </td>
+        <td>
+            <a href="#" class="remove-task">
+            <i class='fa fa-trash'></i>
+        </td>
+    </tr>
+    <tr>
+        <td>Learn CSS</td>
+        <td>22.06.2020</td>
+        <td>
+            <input type="checkbox" class="mark-done" data-id=3>
+        </td>
+        <td>
+            <a href="#" class="remove-task">
+            <i class='fa fa-trash'></i>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
 
 </body>
 </html>
